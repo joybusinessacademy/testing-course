@@ -1,0 +1,32 @@
+
+<content-box>
+    <page-title :centered="true" :title="pageTitle"></page-title>
+    <div class="row">
+        <p class="text-center">
+                                            Owner-Drivers may have one of two truck types
+                                        </p>
+                                        <p class="blue-text text-center">
+                                            Click on each truck to find out more
+                                        </p>
+        <button-row align="center">
+           <modal :content="modal">
+          
+                 <template slot="button">
+                     <image-block :alt="alt" :image=image :root=root></image-block>
+                 </template>
+           
+                <p>Pick Up Delivery trucks are exactly that, a typical morning run will have the Owner-Driver deliver products from the destination branch out for final delivery. That leaves the rest of the day for pickups.</p>
+           </modal>
+        </button-row>
+        <button-row align="center">
+            <modal :content="modal2">
+            
+                 <template slot="button">
+                     <image-block :alt="alt" :image=image2 :root=root></image-block>
+                 </template>
+           
+               <p>Linehaul trucks act as the heavy movers between Mainfreight locations or directly between origin and end destination where the truck is used solely for one consignment.</p>
+           </modal>
+        </button-row>
+    </div>
+</content-box>

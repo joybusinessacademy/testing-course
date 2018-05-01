@@ -1,0 +1,28 @@
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :centered="true" :title="pageTitle"></page-title>
+        <div class="row">
+        <p class="text-center">
+            Let’s take a closer look at Mainfreight’s Owner-Driver model
+        </p>
+        <button-row align="center">
+            <modal :content="modal">
+                <p>Trucks are owned exclusively by “Owner-Drivers” who contract to Mainfreight and uphold the culture and standards set by Mainfreight. This model provides ownership and accountability for customer freight during all Domestic Transport processes.</p>
+            </modal>
+        </button-row>
+        <button-row align="center">
+            <modal :content="modal2">
+                <p>It’s a win/win as Owner Drivers get to own and run their own business alongside a global company. Drivers get paid per delivery and pickup based on the distance of travel and size of freight.</p>
+            </modal>
+        </button-row>
+        <button-row align="center">
+            <modal :content="modal3">
+                <p>Mainfreight has less capital outlay in purchasing of trucks and reduced operating expense maintaining the fleet. Owners take pride in their vehicles and keeping “their” customers happy.</p>
+            </modal>
+        </button-row>
+    </div>
+    </template>
+</content-box>

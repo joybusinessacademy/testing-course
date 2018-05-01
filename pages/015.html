@@ -1,0 +1,33 @@
+  <content-box>
+    <page-title :centered="true" :title="pageTitle"></page-title>
+    <div class="row">
+         <p class="text-center">
+                                            Palletised freight can be loaded onto trucks as either a FTL or LTL.
+                                        </p>
+                                        <p class="blue-text text-center">
+                                            Click on each truck to find out more.
+                                        </p>
+                                                  <div class="row" style="display: flex">
+        <button-row align="center" style="width: 50%">
+           <modal :content="modal">
+
+                 <template slot="button">
+                     <image-block :alt="alt" :image=image :root=root></image-block>
+                 </template>
+           <p>FTL or “Full truckload” is where one customer fills the truck with one consignment of goods. </p>
+           <p>As mentioned earlier Full Truck Loads will normally be delivered directly from origin to end destination which saves time and effort throughout the Transport process.</p>
+           </modal>
+        </button-row>
+        <button-row align="center" style="width: 50%">
+            <modal :content="modal2">
+            
+                 <template slot="button">
+                     <image-block :alt="alt" :image=image2 :root=root></image-block>
+                 </template>
+           
+             LTL or “Less than Truckload” is used where multiple customers use multiple consignments to fill the trucks capacity. Loads then are transported to a Mainfreight Branch for sorting to ensure the correct items get delivered to the end destination.
+           </modal>
+        </button-row>
+        </div>
+    </div>
+</content-box>

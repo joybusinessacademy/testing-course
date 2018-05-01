@@ -1,0 +1,505 @@
+/* Add any Course specific CSS here */
+
+/* martin */
+.movingTruck {
+    transform: translateX(-101%);
+    transition: all 1s ease-in-out;
+}
+.dm-pacels {
+    cursor:pointer;
+}
+
+.flexy-parent {
+        width: 80%;
+    text-align: center;
+    margin: auto !important;
+
+}
+
+.first-part button, .second-part button, .third-part button {
+    margin-top: 30px;
+}
+
+body {
+    background-color: #eaeaea !important;
+}
+
+.text-main {
+    color: #3399CC !important;
+}
+
+.next-button,
+.next-button2 {
+    background-image: url(/course-files/course-00-testing/images/next-button.svg);
+}
+
+.jba-radio-default {
+    fill: #ED151D;
+}
+
+.jba-radio-inner.jba-radio-selected {
+    fill: #38B449;
+}
+
+.prev-button,
+.prev-button2 {
+    background-image: url(/course-files/course-00-testing/images/prev-button.svg);
+}
+
+.courseProgressBar {
+    background-image: url(/course-files/course-00-testing/images/progress.svg);
+}
+
+.jba-btn {
+    background: url(/course-files/course-00-testing/images/rectangle-button.svg);
+}
+
+.jba-btn.red{
+    background: url(/course-files/course-00-testing/images/rectangle-button-red.svg);
+}
+
+.jba-btn:hover {
+    background: url(/course-files/course-00-testing/images/rectangle-button-hover.svg);
+}
+
+.jba-visited {
+    background: url(/course-files/course-00-testing/images/rectangle-button-hover.svg);
+}
+
+.prev-button:hover {
+    background: url(/course-files/course-00-testing/images/prev-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+.next-button:hover {
+    background: url(/course-files/course-00-testing/images/next-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+.question,
+.question-button {
+    background: url(/course-files/course-00-testing/images/question-button.svg);
+    background-repeat: no-repeat;
+}
+
+.question-button:hover {
+    background: url(/course-files/course-00-testing/images/question-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+.pageSix .pageSixLine {
+    background-image: url(/course-files/course-00-testing/images/line.svg);
+}
+
+.orange-blob-box {
+    background: url(/course-files/course-00-testing/images/blue-blob-box.svg);
+}
+
+.close-button {
+    background: url(/course-files/course-00-testing/images/circle-button.svg);
+    background-repeat: no-repeat;
+}
+
+.close-button:hover {
+    background: url(/course-files/course-00-testing/images/circle-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+.close-button i {
+    margin-top: -5px;
+}
+
+.back-button {
+    background: url(/course-files/course-00-testing/images/back-button.svg);
+    background-repeat: no-repeat;
+}
+
+.back-button:hover {
+    background: url(/images/course-assets/buttons/back-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    background-image: url(/course-files/course-00-testing/images/mainFreightCickBox.svg);
+}
+
+.blue {
+    background: #0061AA !important;
+}
+
+.blue-squiggle {
+    background-color: #00A3E4;
+    color: white;
+}
+
+.light_blue-squiggle {
+    background-color: #D4EFFB;
+    color: white;
+}
+
+.light_blue-squiggle p,
+.light_blue-squiggle h4 {
+    color: #000000;
+}
+
+.red-squiggle {
+    background-color: #E61C32;
+    color: white;
+}
+
+.popup-close-test {
+    top: -9px;
+    right: -15px;
+    padding: 1px 0px;
+    height: 40px;
+    width: 40px;
+}
+
+.jba-btn-lg {
+    font-size: 15px;
+
+}
+
+.purpleBack {
+    background-color: #0061AA;
+}
+
+.next-button-locked {
+    background-image: url(/images/course-assets/buttons/next-button-locked.svg);
+}
+
+.prev-button-locked {
+    background-image: url(/course-files/course-00-testing/images/prev-button-locked.svg);
+    padding: 2em;
+    color: white;
+    background-repeat: no-repeat;
+    transition: .15s all;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 320px) {
+.prev-button-locked {
+    padding: 1.5em;
+    margin-top: 5px;
+}
+}
+
+.purpleBack .next-button:hover {
+    background: url(/course-files/course-00-testing/images/next-button-hover2.svg);
+    background-repeat: no-repeat;
+}
+
+.purpleBack .prev-button:hover {
+    background: url(/course-files/course-00-testing/images/prev-button-hover2.svg);
+    background-repeat: no-repeat;
+}
+
+.purpleBack .jba-btn:hover {
+    background: url(/course-files/course-00-testing/images/rectangle-button-hover2.svg);
+    color: #00A3E4 !important;
+}
+
+.blue .close-button {
+    background: url(/course-files/course-00-testing/images/circle-button-hover.svg);
+    background-repeat: no-repeat;
+}
+
+.blue .close-button:hover {
+    background: url(/course-files/course-00-testing/images/circle-button-hover2.svg);
+    background-repeat: no-repeat;
+}
+
+.blue .close-button i:hover {
+    background-repeat: no-repeat;
+    color: #00A3E4 !important;
+}
+
+
+
+/* Course specfic */
+
+.red-squiggle, .blue-squiggle {
+    padding: 10px;
+    margin-top: 16px !important;
+}
+
+.parcel-flex {
+    display: flex;
+        justify-content: space-evenly;
+}
+
+.v3-feedback {
+    width: 100%;
+}
+
+.v3-activity-col {
+    align-items: center;
+}
+
+
+/*********************************************
+  :: Swipe Cards
+********************************************/
+
+.demo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.demo__content {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    user-select: none;
+}
+
+.demo__card-cont {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 10px;
+}
+
+.demo__card {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 100%;
+}
+
+.demo__card.reset {
+    transition: transform 0.3s;
+    transform: translateX(0) !important;
+}
+
+.demo__card.reset .demo__card__choice {
+    transition: opacity 0.3s;
+    opacity: 0 !important;
+}
+
+.demo__card.inactive {
+    transition: transform 0.3s;
+}
+
+.demo__card.to-left {
+    transform: translateX(-30rem) rotate(-30deg) !important;
+}
+
+.demo__card.to-right {
+    transform: translate(30rem) rotate(30deg) !important;
+}
+
+.demo__card.below {
+    z-index: 1;
+}
+
+.v3-activityBox .sectionTitleCentered {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.demo__card__top {
+    height: 100%;
+    padding-top: 20px;
+    /*background: #795548;*/
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.demo__card__name {
+    width: 270px;
+    margin: auto;
+    bottom: 12px;
+    position: absolute;
+    left: 44px;
+}
+
+.demo__card__name p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.demo__card__we {
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    width: 250px;
+    margin: auto;
+}
+
+.demo__card__choice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo__card__choice p {
+        text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.demo__card__choice:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: -2rem -3rem #fff, 2rem -3rem #fff;
+}
+
+.demo__card__choice .fa {
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    margin-left: -2rem;
+    color: #fff;
+    font-size: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+}
+
+.demo__card__choice:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 4rem;
+    height: 1.5rem;
+    margin-left: -2rem;
+    border: 0.6rem solid #fff;
+    border-bottom: none;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.swipe-arrows { display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;}
+
+.demo__card__choice.m--reject {
+   border: 3px solid #2e6ab8;
+    background: white;
+}
+
+.demo__card__choice.m--like {
+    border: 3px solid #2e6ab8;
+    background: white;
+}
+
+.demo__card__choice.m--like:after {
+    transform: scaleY(-1);
+}
+
+.demo__card__drag {
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+}
+
+.button-row {
+    flex-direction: column;
+}
+
+.card-score .card-box {
+ border: 2px solid #2e6ab8;
+       padding: 10px 20px;
+    width: 83px;
+
+}
+
+.card-score {
+        display: flex;
+}
+
+.card-score .card-response {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-score .fa-times {
+    color: red;
+    padding-left: 10px;
+        font-size: 20px;
+}
+
+.card-score .fa-check {
+    color: #38B449;
+    padding-left: 10px;
+        font-size: 20px;
+}
+
+.demo__tip {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.good-job {
+    position: relative;
+    width: 24rem;
+    height: 350px;
+    margin: 20px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.good-job h1 {
+    transform: none;
+    color: #38B449;
+    margin-bottom: 26px;
+}
+
+.good-job h1 {
+    text-align: center;
+    margin-bottom: 26px;
+}
+.shake {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+.fa {
+    margin-bottom: 0;
+}
+
+.parcel-col {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

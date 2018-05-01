@@ -1,0 +1,33 @@
+<activity-box type="Activity">
+    <page-title :centered="true" :title="pageTitle"></page-title>
+    <p class="text-center blue-text">
+        Drag the parcel into the correct load type.
+    </p>
+    <div class="row one-line">
+        <div class="flexy-image col-xs-12 hello tcenter">
+            <img src="/course-files/course-00-testing/images/png/23.png" class="ib my-draggable cpointer" style="position:relative;width:150px;" />
+            <div class="row one-line">
+                <img src="/course-files/course-00-testing/images/png/25.png" class="ib drop-zone" id="one" style="position:relative;width:50%;" />
+                <p class="tcenter bold">FTL</p>
+                <img src="/course-files/course-00-testing/images/png/18.png" class="ib drop-zone" id="two" style="position:relative;width:50%;" />
+                <p class="tcenter bold">LTL</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-row flex-jc-end display-option-mf">
+        <div class="v3-feedback" v-bind:class="{'v3-error':!correct,'v3-correct':correct}" v-show="popup">
+            <div class="icon-side">
+                <span class="fa " v-bind:class="{'fa-times':!correct,'fa-check':correct}"></span>
+            </div>
+            <div class="v3-feedback-text">
+                <p>
+                    <{ text }>
+                </p>
+                <button aria-label="Continue" class="submit-next" @click="nextPage()">
+                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</activity-box>
+

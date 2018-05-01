@@ -1,0 +1,54 @@
+<activity-box type="Activity">
+    <div class="row">
+        <!-- put all of your content into the squiggle content div -->
+        <page-title :centered="true" :title="pageTitle" v-if="!goodJob"></page-title>
+        <div class="row" style="max-width: 300px; margin: auto !important;" v-if="!goodJob">
+            <div class="col-xs-6">
+                <img src="/course-files/course-00-testing/images/png/12.png" alt="" style="width:100px;">
+            </div>
+            <div class="col-xs-6">
+                <div class="card-score">
+                    <div class="card-box"><strong><{score}></strong> / 7 </div>
+                    <div class="card-response">
+                        <i class="fa fa-times" aria-hidden="true" v-show="correct == 1"></i>
+                        <i class="fa fa-check" aria-hidden="true" v-show="correct == 2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="demo__card-cont" v-bind:class="{'display-n': goodJob}">
+        <div v-for="card in cards" class="demo__card" :data-answer="card.answer">
+            <div id="<{card.name}>" class="demo__card__top" v-bind:style="{backgroundImage: card.background}"></div>
+            <div class="demo__card__choice m--reject" v-on:change="popup = true">
+                <img src="/course-files/course-00-testing/images/strength.png" alt="" style="width:80%;">
+            </div>
+            <div class="demo__card__choice m--like">
+                <img src="/course-files/course-00-testing/images/weakness.png" alt="" style="width:80%;">
+            </div>
+            <div class="demo__card__drag"></div>
+        </div>
+        <!-- End Content -->
+    </div>
+    <div class="row swipe-arrows" v-if="!goodJob">
+          <img src="/course-files/course-00-testing/images/strength.png" alt="" style="width:100px; height: 50px; margin: 0px 10px;">
+          <strong>OR </strong>
+           <img src="/course-files/course-00-testing/images/weakness.png" alt="" style="width:100px; height: 50px; margin: 0px 10px;">
+     </div>
+    <div class="good-job" v-if="goodJob">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Nice work! </h1>
+            </div>
+        </div>
+        <div class="row">
+            <p class="tcenter">You have got a score: <strong><{score}></strong> / 7</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center one-line">
+                <button @click="replayButton" class="v3-submit-button">Replay</button>
+            </div>
+        </div>
+    </div>
+</activity-box>
